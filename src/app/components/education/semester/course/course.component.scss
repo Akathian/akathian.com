@@ -1,0 +1,28 @@
+[data-toggle="collapse"]:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: medium;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    transform: rotate(90deg);
+    transition: all linear 0.25s;
+}
+
+[data-toggle="collapse"].collapsed:after {
+    transform: rotate(0deg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#course {
+    transition: box-shadow 0.5s;
+}
+
+#course:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}

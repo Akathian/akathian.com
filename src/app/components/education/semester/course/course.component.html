@@ -1,0 +1,28 @@
+<div id="course" class="mb-1 border rounded p-1">
+    <div role="tab">
+        <div class="mb-0 d-flex">
+            <a data-toggle="collapse" [href]="href" aria-expanded="false" class="collapsed" *ngIf="course.code">
+                <b>{{course.code}}</b> - {{ course.name }}
+            </a>
+        </div>
+    </div>
+    <div [id]="course.code" class="collapse p-x" role="tabpanel">
+        <div>
+            <hr class='my-0'>
+            <div class="p-1">
+                <span *ngIf='course.grade'>
+                    Grade: {{ course.grade }} out of 4.0
+                </span>
+                <ul>
+                    <li *ngFor="let topic of course.topics">
+                        {{ topic }}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div *ngIf='!course.code'>
+        Co-Op Term
+    </div>
+</div>

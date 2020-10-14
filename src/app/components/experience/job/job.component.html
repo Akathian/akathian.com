@@ -1,0 +1,28 @@
+    <div class="row">
+        <div class="col-3 pb-3 border-right">
+            <div class="col-12">
+                <div class="text-right font-weight-bold">
+                    {{job.dates.from}} to <br>
+                    {{job.dates.to}}
+                </div>
+            </div>
+            <div class="col-12 text-right mt-2" *ngIf="job.img">
+                <img [src]="job.img" width="50%">
+            </div>
+        </div>
+        <div class="col pb-3">
+            <h5>{{job.name}}</h5>
+            <span>{{job.blurb}}</span>
+            <ul class="mb-0">
+                <li *ngFor="let point of job.desc">{{ point }}</li>
+            </ul>
+            <small>
+            <div class='row ml-4'> 
+                <div *ngFor='let tech of job.tech' class="m-1 border rounded p-1">
+                    {{ tech }}
+                </div>
+            </div>
+             </small>
+        </div>
+    </div>
+

@@ -1,0 +1,20 @@
+<div class="col-12">
+    <div class='row'>
+        <div class='col-3 text-right border-right'>
+            <b>September 2017 to</b> <br>
+            <b>April 2022</b>
+            <img src='https://pbs.twimg.com/profile_images/545315956784787456/apJm4iQ4.png' width="75%">
+        </div>
+        <div class="col">
+            <b>Candidate, Honors Bachelor of Science</b> <i> University of Toronto Scarborough</i>. Double Major in Neuroscience and Computer Science, 4th year. GPA: <b>3.13</b>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <span *ngFor="let sem of education" class="col-xl-4 col-lg-4 col-md-6 col-xs-12  rounded mb-1" id="semester">
+            <!-- <div class="m-1 border rounded"> -->
+                <app-semester [sem]='sem'></app-semester>
+            <!-- </div> -->
+        </span>
+    </div>
+</div>
+
