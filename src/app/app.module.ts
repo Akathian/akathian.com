@@ -11,7 +11,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { EducationComponent } from './components/education/education.component';
 import { JobComponent } from './components/experience/job/job.component';
 import { SemesterComponent } from './components/education/semester/semester.component';
-import { CourseComponent } from './components/education/semester/course/course.component'
+import { CourseComponent } from './components/education/semester/course/course.component';
+import { ProjComponent } from './components/projects/proj/proj.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CourseComponent } from './components/education/semester/course/course.c
     EducationComponent,
     JobComponent,
     SemesterComponent,
-    CourseComponent
+    CourseComponent,
+    ProjComponent
   ],
   imports: [
     BrowserModule,

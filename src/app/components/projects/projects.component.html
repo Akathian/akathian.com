@@ -1,1 +1,5 @@
-<p>projects works!</p>
+<div class='row'>
+    <div *ngFor='let proj of projects' class="col-12">
+        <app-proj [proj]='proj'></app-proj>
+    </div>
+</div>
