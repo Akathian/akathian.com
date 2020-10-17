@@ -36,4 +36,11 @@ a {
 
 .attachCtrls {
     cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+
+.attachCtrls:hover {
+    background-color: black;
+    cursor: pointer;
 }
