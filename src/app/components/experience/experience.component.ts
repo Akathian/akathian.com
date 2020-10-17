@@ -10,6 +10,24 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
   experiences = [
     {
+      name: 'Web Developer & Tutor',
+      company: 'Thayahan Arts School',
+      location: 'Scarborough, ON',
+      blurb: 'Build and maintain the business\' website and teach subjects such as Programming, Math and French to students',
+      img: 'https://thayahanartsschool.ca/assets/logo.png',
+      dates: {
+        from: "September 2020",
+        to: 'Present'
+      },
+      desc: [
+        'Created an interactive and responsive business website using Angular and Google Firebase',
+        'Teach multiple students fundamentals of programming, mathematics and french while keeping them engaged and interested in the lessons',
+      ],
+      tech: [
+        'Python', 'French', 'Math'
+      ]
+    },
+    {
       name: 'Innovation Engineer (R&D Application Developer)',
       company: 'CIBC',
       location: 'Toronto, ON',

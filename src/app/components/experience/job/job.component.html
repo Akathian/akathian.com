@@ -11,7 +11,9 @@
             </div>
         </div>
         <div class="col pb-3">
-            <h5>{{job.name}}</h5>
+            <h5>{{job.name}} <br>
+               <small><small class="text-muted">{{job.company}}, {{job.location}}</small></small> 
+            </h5>
             <span>{{job.blurb}}</span>
             <ul class="mb-0">
                 <li *ngFor="let point of job.desc">{{ point }}</li>
