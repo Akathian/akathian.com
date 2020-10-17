@@ -12,8 +12,8 @@ export class ProjectsComponent implements OnInit {
     {
       name: '2020 - OVVisuals Ecommerce Website',
       id: "ovvisuals",
-      imgs: [],
-      blurb: 'Building a fully fledged ecommerce web-app for OVVisuals (arts), allowing paypal payments, user login and other functionalities using multiple APIs.',
+      imgs: ['https://i.imgur.com/b5gmgZP.png', 'https://i.imgur.com/8YvkIMu.png', 'https://i.imgur.com/xCLp9Pz.png', 'https://i.imgur.com/HvW6Ume.jpg', 'https://i.imgur.com/vQXjDkU.jpg', 'https://i.imgur.com/VOFupep.png', 'https://i.imgur.com/jP3TE8z.png', 'https://i.imgur.com/KAtbdB7.png', 'https://i.imgur.com/h46obx5.png'],
+      blurb: 'Built a fully fledged ecommerce web-app for OVVisuals (arts), allowing paypal payments, user login and other functionalities using multiple APIs.',
       desc: [
         'Connected users to their data such as their cart, orders and wishlist using NoSQL Firebase Realtime Database',
         'Used Bootstrap styling to render the website more appealing and facilitate implementation of interactivity',
@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: '2019 - Thayahan\'s Arts School Website',
       id: "thayahan",
-      imgs: [],
+      imgs: ['https://i.imgur.com/MVLW91G.jpg', 'https://i.imgur.com/MYKGQnb.png', 'https://i.imgur.com/u9sp9yt.jpg', 'https://i.imgur.com/FA4zhOi.png', 'https://i.imgur.com/k5bZBVZ.jpg', 'https://i.imgur.com/DAoXFNq.png'],
       blurb: 'Created an interactive and responsive business website using Angular and Google Firebase',
       desc: [
         'Implemented Angular route animations to make transitions between pages smooth and elegant',

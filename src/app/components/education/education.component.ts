@@ -15,7 +15,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Life on Earth: Unifying Principles",
           code: "BIOA01",
-          grade: "3.7",
+          grade: "",
           topics: [
             'Evolution', 'Cell Biology', 'Genetics'
           ]
@@ -23,7 +23,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introductory Chemistry I: Structure and Bonding",
           code: "CHMA10",
-          grade: "3.7",
+          grade: "",
           topics: [
             'Chemical Reactions and Stoichiometry', 'Gases', 'Liquids, Solids and  Intermolecular forces', 'Solutions', 'The Quantum-Mechanical Model of the Atom', 'Periodic Properties of the Elements', 'Lewis Theory, Molecular Shapes, Valence Bond Theory and Molecular Orbital Theory', 'Radioactivity and Nuclear Chemistry'
           ]
@@ -31,7 +31,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Computer Science I",
           code: "CSCA08",
-          grade: "3.7",
+          grade: "",
           topics: [
             'Basic Python', 'Iterative Loops', 'Object-Oriented Programming', 'Abstraction/Encapsulation', 'Unit Testing'
           ]
@@ -39,7 +39,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Discrete Mathematics",
           code: "CSCA67",
-          grade: "3.7",
+          grade: "",
           topics: [
             'Direct Proofs',
             'Indirect Proofs(Contradiction, Contrapositive)',
@@ -51,7 +51,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Calculus I for Mathematical Sciences",
           code: "MATA31",
-          grade: "4.0",
+          grade: "",
           topics: [
             'Functions',
             'Limits',
@@ -67,7 +67,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Life on Earth: Form, Function and Interactions",
           code: "BIOA02",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Plant Form and Function',
             'Animal Form and Function',
@@ -77,7 +77,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introductory Chemistry II: Reactions and Mechanisms",
           code: "CHMA11",
-          grade: "3.0",
+          grade: "",
           topics: [
             "Dynamic Chemical Equilibrium",
             'Acid - Base Equilibria in Aqueous Solution',
@@ -90,7 +90,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Computer Science II",
           code: "CSCA48",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Python Data Structures',
             'Stacks / Queues',
@@ -133,7 +133,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Molecular Aspects of Cellular and Genetic Processes",
           code: "BIOB11",
-          grade: "3.0",
+          grade: "",
           topics: [
             'The genome: chromosomes, genes, DNA, stability, heredity, transposable elements',
             'Prokaryotic / Eukaryotic RNA synthesis', ,
@@ -148,7 +148,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Cell and Molecular Biology Laboratory",
           code: "BIOB12",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Spectrophotometry and protein assays',
             'Growth and enumeration of bacteria',
@@ -226,7 +226,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Linear Algebra II",
           code: "MATB24",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Vector Spaces over Fields',
             'Coordinatization',
@@ -249,7 +249,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Software Tools and Systems Programming",
           code: "CSCB09",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Shell Scripting',
             'C',
@@ -264,7 +264,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Databases and Web applications",
           code: "CSCB20",
-          grade: "4.0",
+          grade: "",
           topics: [
             'Relational Algebra',
             'SQLite',
@@ -278,7 +278,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Computer Organization",
           code: "CSCB58",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Basic Circuits',
             'Karnaugh Maps',
@@ -292,7 +292,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Clinical, Developmental, Personality and Social Psychology",
           code: "PSYA02",
-          grade: "3.0",
+          grade: "",
           topics: [
             'Lifespan Development',
             'Personality',
@@ -311,7 +311,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Design and Analysis of Data Structures",
           code: "CSCB63",
-          grade: "3.3",
+          grade: "",
           topics: [
             'Worst Case Complexity',
             'AVL, Intervel, Augmented Trees',
@@ -332,7 +332,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Linguistics",
           code: "LINA01",
-          grade: "3.7",
+          grade: "",
           topics: [
             "Elective Course"
           ]
@@ -348,7 +348,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Biological and Cognitive Psychology",
           code: "PSYA01",
-          grade: "3.3",
+          grade: "",
           topics: [
             "Research Techniques in Psychology", 'Evolutionary Psychology', 'The Biology of Behaviour', 'Learning and Behaviour', 'Sensation', 'Perception', 'Memory and Consciousness'
           ]
@@ -356,7 +356,7 @@ export class EducationComponent implements OnInit {
         {
           name: "An Introduction to Probability",
           code: "STAB52",
-          grade: "3.7",
+          grade: "",
           topics: [
             'The Probability Model', 'Density and Distribution Functions', 'Computer Generation of Random Variables', 'Conditional Probability', 'Expectation', 'Sampling Distributions', 'Weak Law of Large Numbers', 'Central Limit Theorem', 'Poisson Processes'
           ]
@@ -369,7 +369,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Cognitive Neuroscience",
           code: "PSYB55",
-          grade: "3.3",
+          grade: "",
           topics: [
             'Neurotransmission and Neuroanatomy',
             'Methods in Cognitive Neuroscience',
@@ -398,7 +398,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Clinical Psychology",
           code: "PSYB32",
-          grade: "3.7",
+          grade: "",
           topics: [
             'Clinical Assessment, Classification and Diagnosis',
             'Research Methods in the Study of Abnormal Behaviour',
@@ -427,7 +427,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Principles of Programming Languages",
           code: "CSCC24",
-          grade: "3.3",
+          grade: "",
           topics: [
             'Haskell Basics',
             'Lazy Evaluation',
@@ -444,7 +444,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Operating Systems",
           code: "CSCC69",
-          grade: "3.3",
+          grade: "",
           topics: [
             'PintOS Bootstrapping, Threads, User Programs, Virtual Memory and File Systems',
             'Managing and Scheduling Processes',
