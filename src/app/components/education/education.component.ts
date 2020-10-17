@@ -485,14 +485,14 @@ export class EducationComponent implements OnInit {
         {
           name: "Introduction to Numerical Algorithms for Computational Mathematics",
           code: "CSCC37",
-          grade: "IPR",
+          grade: "",
           topics: [
           ]
         },
         {
-          name: "Algorithm Design and AnalysiS",
+          name: "Algorithm Design and Analysis",
           code: "CSCC73",
-          grade: "IPR",
+          grade: "",
           topics: [
             'Greedy Algorithms',
             'Divide & Conquer (D&C) Algorithms',
@@ -505,7 +505,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Computer and Network Security",
           code: "CSCD27",
-          grade: "IPR",
+          grade: "",
           topics: [
             'Classical Cryptography',
             'Symmetric Cryptography, Hash Functions and Protocols',
@@ -523,7 +523,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Neuroethology",
           code: "NROC34",
-          grade: "IPR",
+          grade: "",
           topics: [
             'Central pattern generation: Stomatogastric ganglion (STG)',
             'Modulation / Vision: Pattern Learning in Bees',
@@ -539,7 +539,7 @@ export class EducationComponent implements OnInit {
         {
           name: "Synaptic Organization and Physiology of the Brain",
           code: "NROC69",
-          grade: "IPR",
+          grade: "",
           topics: [
             'Organizational Principles of the Mammalian Brain',
             'Pre-Synaptic and Post-Synaptic Mechanisms of Neurotransmission',
