@@ -12,7 +12,8 @@ import { EducationComponent } from './components/education/education.component';
 import { JobComponent } from './components/experience/job/job.component';
 import { SemesterComponent } from './components/education/semester/semester.component';
 import { CourseComponent } from './components/education/semester/course/course.component';
-import { ProjComponent } from './components/projects/proj/proj.component'
+import { ProjComponent } from './components/projects/proj/proj.component';
+import { InstagramComponent } from './components/instagram/instagram.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProjComponent } from './components/projects/proj/proj.component'
     JobComponent,
     SemesterComponent,
     CourseComponent,
-    ProjComponent
+    ProjComponent,
+    InstagramComponent
   ],
   imports: [
     BrowserModule,
