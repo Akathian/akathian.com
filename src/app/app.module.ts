@@ -14,6 +14,12 @@ import { SemesterComponent } from './components/education/semester/semester.comp
 import { CourseComponent } from './components/education/semester/course/course.component';
 import { ProjComponent } from './components/projects/proj/proj.component';
 import { InstagramComponent } from './components/instagram/instagram.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StorageServiceModule } from 'angular-webstorage-service';
+import { NavComponent } from './components/shared/nav/nav.component';
+
+import { SanitizeHtmlPipe } from './pipes/sanitize-html.pipe';
+import { SkillComponent } from './components/skills/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +34,18 @@ import { InstagramComponent } from './components/instagram/instagram.component'
     SemesterComponent,
     CourseComponent,
     ProjComponent,
-    InstagramComponent
+    InstagramComponent,
+    NavComponent,
+    SanitizeHtmlPipe,
+    SkillComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    StorageServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

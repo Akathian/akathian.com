@@ -1,9 +1,110 @@
-<p>instagram works!</p>
-<a
-  href="https://api.instagram.com/oauth/authorize
-?client_id=300842721164851
-&redirect_uri=https://akathian.com/instagram-analytics
-&scope=user_profile,user_media
-&response_type=code"
-  >Auth this app</a
->
+<div class="container p-3">
+  <div class="col">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <h3>What is this?</h3>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <h3>Users not following {{ username }} back ({{ lenOfData }}):</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <p>
+          A quick tool I made to check who's not following you back on
+          Instagram. I decided to make this after I got hacked by a followers
+          reporting app called Reports+ that I was using. I managed to get my
+          account back, but I don't trust those apps anymore. So I made one
+          myself.
+        </p>
+        <p>
+          If you're public, I don't need your username and password to get the
+          information.
+        </p>
+        <form
+          [formGroup]="customForm"
+          (ngSubmit)="invoke(customForm.value)"
+          class="border border-light"
+          id="customFormId"
+        >
+          Private IG (may not work with 2FA):
+          <br />
+          <small
+            >It's normal too see a login attempt from Mountain View, CA</small
+          >
+          <input
+            type="text"
+            class="form-control mb-4"
+            placeholder="Instagram @"
+            formControlName="insta_username"
+          />
+          <input
+            type="text"
+            class="form-control mb-4"
+            placeholder="Instagram Pass"
+            type="password"
+            formControlName="insta_password"
+          />
+          <hr />
+          Public IG:
+          <input
+            type="text"
+            class="form-control mb-4"
+            placeholder="Instagram @"
+            formControlName="username"
+          />
+          <button class="btn btn-dark rounded-0 mb-3" type="submit">
+            {{ btnText }}
+          </button>
+        </form>
+      </div>
+      <div
+        class="col-sm-12 col-md-12 col-lg-6 users border"
+        *ngIf="!showLoading && lenOfData > 0"
+      >
+        <div class="row my-1 border p-2" *ngFor="let user of notFollowBack">
+          <div class="mr-2">
+            <img
+              [src]="user.profile_pic_url"
+              width="50px"
+              alt=""
+              class="rounded-circle"
+            />
+          </div>
+          <div class="col">
+            <div class="row">
+              {{ user.username }}
+            </div>
+            <div class="row">
+              <small>{{ user.full_name }}</small>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-auto my-auto mx-auto">
+            <div class="row">
+              <a
+                class="mx-auto"
+                [href]="'https://www.instagram.com/' + user.username"
+              >
+                <button class="btn btn-outline-dark rounded-0">
+                  <small> Profile </small>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-12 col-md-12 col-lg-6 users border"
+        *ngIf="showLoading"
+      >
+        <img src="assets/loading.gif" alt="" />
+      </div>
+      <div
+        class="col-sm-12 col-md-12 col-lg-6 users border"
+        *ngIf="!showLoading && lenOfData == 0"
+      >
+        <span class="my-auto">Users will show up here</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: norwester;
+    src : url('./assets/fonts/norwester.otf')
+}
+
+@font-face {
+    font-family: montserrat;
+    src : url('./assets/fonts/Montserrat-Regular.ttf')
+}
+
+@font-face {
+    font-family: kollektif;
+    src : url('./assets/fonts/Kollektif.ttf')
+}
+
+
+@font-face {
+    font-family: norwester;
+    src : url('./assets/fonts/norwester.otf')
+}
+
 html {
     scroll-behavior: smooth;
 }
+
+* {
+    //  outline: 1px solid red;
+}
+
+.emph {
+    font-family: norwester, serif;
+    letter-spacing: 2px;
+}
+
+.sub-emph {
+    font-family: kollektif;
+    letter-spacing: 2px;
+
+}
+
+#site {
+    font-family: montserrat;
+    background-color: rgb(30, 37, 57); 
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
+}
+
+.yellow {
+    color: #ffd700;
+}
+

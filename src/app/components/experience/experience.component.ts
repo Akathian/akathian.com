@@ -10,7 +10,28 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
   experiences = [
     {
+      name: 'Freelance Web Developer',
+      id: 'free',
+      company: 'Freelance',
+      location: 'Scarborough, ON',
+      blurb: 'Build and maintain the business\' website and teach subjects such as Programming, Math and French to students',
+      img: 'https://thayahanartsschool.ca/assets/logo.png',
+      dates: {
+        from: "September 2020",
+        to: 'Present'
+      },
+      desc: [
+        'Built a fully fledged e-commerce web-app for OVVisuals (arts), allowing paypal payments, user login and other functionalities using multiple APIs.',
+        'Creating a blog and forum website for a mental health awareness non-profit business, allowing for user anonymity',
+        'Wrote reusable Angular components to keep the code for the websites clean and organized'
+      ],
+      tech: [
+        'Python', 'French', 'Math'
+      ]
+    },
+    {
       name: 'Web Developer & Tutor',
+      id: 'thayahan',
       company: 'Thayahan Arts School',
       location: 'Scarborough, ON',
       blurb: 'Build and maintain the business\' website and teach subjects such as Programming, Math and French to students',
@@ -28,7 +49,8 @@ export class ExperienceComponent implements OnInit {
       ]
     },
     {
-      name: 'Innovation Engineer (R&D Application Developer)',
+      name: 'Innovation Engineer (R&D App Dev)',
+      id: 'cibc',
       company: 'CIBC',
       location: 'Toronto, ON',
       blurb: 'One of seven members of an agile R&D team following SDLC practices prototyping an interactive digital assistant for CIBC corporate and client use cases.',
@@ -39,11 +61,11 @@ export class ExperienceComponent implements OnInit {
       },
       desc: [
         'Developped a queueing system using Node.js to determine event processing order',
-        'Wrote extensive mocha/chai unit tests for the server\'s Node.js backend',
-        'Built a neural network predicting user\'s overall sentiment based on their gestures, facial expression and what they say so that the assistant can change how she answers the user\'s questions.',
-        'Performed research on finding technologies for solutioning the assistant\'s learning model, UI controls, microphone, and camera set-ups',
-        'Wrote a program that provided the same functionality as the AWS Lex Console GUI using the LexModelBuildingService SDK module to allow for Git versioning of Lex bots, intents and slots.',
-        'Worked with ultrasonic and infrared sensors to create a prototype for controlling the assistant\'s UI'
+        // 'Wrote extensive mocha/chai unit tests for the server\'s Node.js backend',
+        'Built a NN predicting user\'s overall sentiment based on gestures, facial expression and what they say so that the assistant can change how she answers the user\'s questions.',
+        // 'Performed research on finding technologies for solutioning the assistant\'s learning model, UI controls, microphone, and camera set-ups',
+        'Wrote a program that provided the same functionality as the AWS Lex Console GUI using the SDK to allow for Git versioning of Lex bots, intents and slots.',
+        // 'Worked with ultrasonic and infrared sensors to create a prototype for controlling the assistant\'s UI'
       ],
       tech: [
         'Node.js', 'Python (AI & Edge Computing)', 'AWS', 'Agile', 'Git (GitFlow)', 'MySQL', 'Mocha/Chai', 'React.js', 'IoT', 'Jira'
@@ -51,6 +73,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       name: 'French Coding & Robotics Teacher',
+      id: 'sylvan',
       company: 'Sylvan Learning of Unionville',
       location: 'Markham, ON',
       blurb: '',
@@ -72,6 +95,7 @@ export class ExperienceComponent implements OnInit {
       name: 'Pharmacy Assistant',
       company: 'Shopper\'s Drug Mart',
       location: 'Markham, ON',
+      id: 'shop',
       blurb: '',
       img: 'https://searchlogovector.com/wp-content/uploads/2018/10/shoppers-drug-mart-logo-vector.png',
       dates: {

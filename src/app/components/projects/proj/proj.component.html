@@ -1,69 +1,48 @@
-<div id="course" class="mb-3 p-1">
-    <div role="tab">
-        <div class="mb-0 d-flex">
-            <a data-toggle="collapse" [href]="href" aria-expanded="false" class="collapsed">
-                {{ proj.name }}
-            </a>
+<div class="project-parent rounded-lg" style="overflow: hidden">
+  <div
+    class="p-0 project"
+    [style]="
+      'background: linear-gradient(
+rgba(30, 37, 57, 0.9),
+rgba(0, 0, 0, 0.5)
+),  url(../../../../assets/projects/' +
+        projects[idx].id +
+        '_small.png) center no-repeat ; background-size: contain; 
+'
+        | sanitizeHtml
+    "
+  >
+    <img
+      src="../../../../assets/projects/{{ projects[idx].id }}_small.png"
+      alt=""
+      width="100%"
+      style="visibility: hidden; z-index: -1"
+    />
+
+    <div class="" style="position: absolute; top: 0">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col sub-emph" style="letter-spacing: 2px">
+            {{ projects[idx].year }}
+          </div>
         </div>
-    </div>
-    <hr class="m-0">
-    <div [id]='proj.id' class="collapse p-x" role="tabpanel">
-        <div class='card'>
-            <div class='card-body'>
-                <div class="row mb-4">
-                    <div *ngIf='proj.imgs.length || proj.iframe' class="col-md-6 col-lg-6 col-xl-6">
-                        <span *ngIf='proj.imgs.length'>
-                            <div class="view  overlay z-depth-1 rounded mb-3 mb-md-0">
-                                <img class="w-100" [src]="currImg" alt="Sample">
-                                <div class="d-flex justify-content-between medium bg-dark text-white">
-                                    <div class="attachCtrls p-2" (click)='nextImg(-1)'>
-                                        &#60;
-                                    </div>
-                                    <div class="p-2">
-                                        {{ currImgIndex + 1 }} of {{ proj.imgs.length }}
-                                    </div>
-                                    <div class="attachCtrls p-2" (click)='nextImg(1)'>
-                                        &#62;
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                        <span *ngIf='proj.iframe'>
-                            <div class="iframe-container">
-                                <iframe src="https://www.youtube.com/embed/9n59mADAYR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </span>
-                    </div>
-        
-                    <div *ngIf='proj.imgs.length || proj.iframe' class="d-flex flex-column col-md-6 col-lg-6 col-xl-6">
-                        <div>
-                            {{ proj.blurb }}
-                        </div>
-                        <ul>
-                            <li *ngFor="let point of proj.desc"> {{point}}</li>
-                        </ul>
-                    </div>
-                    <div *ngIf='!(proj.imgs.length || proj.iframe)' class="d-flex flex-column col-md-12 col-lg-12 col-xl-12">
-                        <div>
-                            {{ proj.blurb }}
-                        </div>
-                        <ul>
-                            <li *ngFor="let point of proj.desc"> {{point}}</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="d-flex justify-content-between">
-                    <div>
-                        He
-                    </div>
-                    <div>
-                        He
-                    </div>
-                </div> -->
-            </div>
+        <div class="row">
+          <div class="col">
+            <h4 class="emph story-title">
+              {{ projects[idx].name }} &mdash; {{ projects[idx].type }}
+            </h4>
+
+            <h6>
+              <a [href]="projects[idx].link" target="_blank">
+                Click to view project <i class="fas fa-arrow-right"></i
+              ></a>
+            </h6>
+            <!-- <ul>
+      <li *ngFor="let pt of projects[idx].desc">{{ pt }}</li>
+    </ul> -->
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-
-
-

@@ -1,0 +1,50 @@
+<div
+  class="project-parent rounded-lg"
+  style="overflow: hidden"
+  data-aos="fade-up"
+  data-aos-easing="ease-in-out"
+  data-aos-duration="500"
+  data-aos-offset="0"
+>
+  <div
+    class="p-0 project"
+    [style]="
+      'background: linear-gradient(
+rgba(30, 37, 57, 0.9),
+rgba(0, 0, 0, 0.5)
+),  url(../../../../assets/skills/' +
+        skills[idx].id +
+        '.png) center no-repeat ; background-size: contain; 
+' | sanitizeHtml
+    "
+  >
+    <img
+      src="../../../../assets/skills/{{ skills[idx].id }}.png"
+      alt=""
+      width="100%"
+      style="visibility: hidden; z-index: -1"
+    />
+
+    <div class="" style="position: absolute; top: 0">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col sub-emph" style="letter-spacing: 2px">
+            <!-- {{ skills[idx].year }} -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4 class="emph story-title">
+              {{ skills[idx].cat }}
+            </h4>
+            <ul>
+              <li *ngFor="let item of skills[idx].items" class="story-body">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

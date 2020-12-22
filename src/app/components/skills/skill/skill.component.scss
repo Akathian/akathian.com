@@ -1,0 +1,17 @@
+.project {
+    transition: all 0.5s;
+}
+
+.project-parent:hover .project,
+.project-parent:focus .project {
+  transform: scale(1.05);
+
+}
+
+.story-title {
+    font-size: min(3.5vmin, 25px);
+}
+
+.story-body {
+    font-size: min(3vmin, 20px);
+}
