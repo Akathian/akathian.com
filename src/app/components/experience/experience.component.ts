@@ -103,7 +103,7 @@ export class ExperienceComponent implements OnInit {
         to: 'January 2016'
       },
       desc: [
-        'Assisted pharmacists in medication refilling, dispensing and managing patient records % confidentially',
+        'Assisted pharmacists in medication refilling, dispensing and managing patient records & confidentially',
         'Performed data entry of prescriptions, new patients and patient profile updates in HealthWatch',
         'Processed more than 15 prescriptions daily in person, by phone and on the computer',
       ],
