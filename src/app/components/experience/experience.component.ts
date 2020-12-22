@@ -17,7 +17,7 @@ export class ExperienceComponent implements OnInit {
       blurb: 'Build and maintain the business\' website and teach subjects such as Programming, Math and French to students',
       img: 'https://thayahanartsschool.ca/assets/logo.png',
       dates: {
-        from: "September 2020",
+        from: "August 2020",
         to: 'Present'
       },
       desc: [
@@ -37,7 +37,7 @@ export class ExperienceComponent implements OnInit {
       blurb: 'Build and maintain the business\' website and teach subjects such as Programming, Math and French to students',
       img: 'https://thayahanartsschool.ca/assets/logo.png',
       dates: {
-        from: "September 2020",
+        from: "January 2019",
         to: 'Present'
       },
       desc: [
