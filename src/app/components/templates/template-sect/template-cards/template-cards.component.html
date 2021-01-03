@@ -1,0 +1,47 @@
+<div class="project-parent rounded-lg" style="overflow: hidden">
+  <div
+    class="p-0 project"
+    [style]="
+      'background: linear-gradient(
+      rgba(30, 37, 57, 0.9),
+      rgba(0, 0, 0, 0.5)
+  ),  url(assets/template/cards/' +
+        templates[idx].id +
+        '.png) center no-repeat ; background-size: contain; 
+  ' | sanitizeHtml
+    "
+  >
+    <img
+      src="assets/template/cards/{{ templates[idx].id }}.png"
+      alt=""
+      width="100%"
+      style="visibility: hidden; z-index: -1"
+    />
+
+    <div class="" style="position: absolute; top: 0">
+      <div class="container mt-4 mx-3">
+        <!-- <div class="row">
+          <div class="col sub-emph" style="letter-spacing: 2px">
+            {{ templates[idx].year }}
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col">
+            <h4 class="emph story-title">
+              {{ templates[idx].name }} &mdash; {{ templates[idx].type }}
+            </h4>
+
+            <h6>
+              <a [href]="templates[idx].link" target="_blank">
+                Click to view template <i class="fas fa-arrow-right"></i
+              ></a>
+            </h6>
+            <ul class="mt-3 story-body">
+              <li *ngFor="let pt of templates[idx].desc">{{ pt }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

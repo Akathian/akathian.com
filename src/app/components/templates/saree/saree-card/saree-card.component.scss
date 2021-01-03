@@ -1,0 +1,64 @@
+.project {
+    transition: all 0.5s;
+}
+
+.project-parent:hover .project,
+.project-parent:focus .project {
+    transform: scale(1.02);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.story-title {
+    font-size: min(3.5vmin, 25px);
+}
+
+.story-body {
+    font-size: min(2.5vmin, 15px);
+}
+
+.saree-center-card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    font-family: manifesto;
+    font-size: min(2.5vmin, 25px);
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.bootstrap-select .btn:focus {
+    outline: none !important;
+}
+
+
+.underline-anim {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    position: relative;
+}
+
+.underline-anim:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.underline-anim:hover:after {
+    width: 100%;
+    left: 0;
+}

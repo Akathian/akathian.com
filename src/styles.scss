@@ -20,6 +20,11 @@
     src : url('./assets/fonts/norwester.otf')
 }
 
+@font-face {
+    font-family: manifesto;
+    src : url('./assets/fonts/MANIFESTO.ttf')
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,4 +54,17 @@ html {
 .yellow {
     color: #ffd700;
 }
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    -webkit-box-shadow: none;
+}
 
+::-webkit-scrollbar-thumb:window-inactive {
+    background: none;
+}

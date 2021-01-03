@@ -6,12 +6,14 @@ import * as firebase from 'firebase';
 import 'firebase/analytics'
 import "firebase/auth";
 import { environment } from 'src/environments/environment';
+import { SareeComponent } from './components/templates/saree/saree.component';
 
 firebase.initializeApp(environment.firebaseConfig);
 firebase.analytics();
 const routes: Routes = [
   // { path: 'instagram-analytics', component: InstagramComponent },
   { path: '', component: MainComponent },
+  { path: 'templates/saree-store', component: SareeComponent }
 
 ];
 

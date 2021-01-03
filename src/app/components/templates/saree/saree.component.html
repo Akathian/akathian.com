@@ -1,0 +1,84 @@
+<div class="text-center m-3 pt-2 saree-crumbs">
+  <h1 class="saree-crumbs-text m-2"><a href="/"> AK Sarees</a></h1>
+  <h6 id="main-crumbs" class="saree-crumbs-text m-2">
+    <a href="templates/saree-store" class="underline-anim"> All </a> /
+  </h6>
+</div>
+
+<div id="All" class="main-saree">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center nav-row align-items-center"
+      [@listAnimation]="3"
+    >
+      <div class="col-4 p-0" *ngFor="let category of allArray">
+        <app-saree-card [sareeData]="category"></app-saree-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Women" class="main-saree hidden">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center nav-row align-items-center"
+      [@listAnimation]="3"
+    >
+      <div
+        class="col-4 p-0"
+        *ngFor="let category of All.Women.children | keyvalue"
+      >
+        <app-saree-card [sareeData]="category.value"></app-saree-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div id="Men" class="main-saree hidden">
+  <div class="container-fluid">
+    <div class="row justify-content-center nav-row align-items-center">
+      <div class="col-4 p-0" *ngFor="let category of All.Men | keyvalue">
+        <app-saree-card [sareeData]="category.value"></app-saree-card>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="Sarees" class="main-saree hidden">
+  <div class="container-fluid">
+    <div class="row justify-content-center nav-row align-items-center">
+      <div
+        class="col-4 p-0"
+        *ngFor="let saree of All.Women.children.ASarees.children | keyvalue"
+      >
+        <app-saree-card [sareeData]="saree.value"></app-saree-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Lenghas" class="main-saree hidden">
+  <div class="container-fluid">
+    <div class="row justify-content-center nav-row align-items-center">
+      <div
+        class="col-4 p-0"
+        *ngFor="let lengha of All.Women.children.CLenghas.children | keyvalue"
+      >
+        <app-saree-card [sareeData]="lengha.value"></app-saree-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Blouses" class="main-saree hidden">
+  <div class="container-fluid">
+    <div class="row justify-content-center nav-row align-items-center">
+      <div
+        class="col-4 p-0"
+        *ngFor="let blouse of All.Women.children.BBlouses.children | keyvalue"
+      >
+        <app-saree-card [sareeData]="blouse.value"></app-saree-card>
+      </div>
+    </div>
+  </div>
+</div>

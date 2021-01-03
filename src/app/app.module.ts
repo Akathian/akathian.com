@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,10 @@ import { NavComponent } from './components/shared/nav/nav.component';
 
 import { SanitizeHtmlPipe } from './pipes/sanitize-html.pipe';
 import { SkillComponent } from './components/skills/skill/skill.component';
+import { SareeComponent } from './components/templates/saree/saree.component';
+import { SareeCardComponent } from './components/templates/saree/saree-card/saree-card.component';
+import { TemplateSectComponent } from './components/templates/template-sect/template-sect.component';
+import { TemplateCardsComponent } from './components/templates/template-sect/template-cards/template-cards.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,10 @@ import { SkillComponent } from './components/skills/skill/skill.component';
     NavComponent,
     SanitizeHtmlPipe,
     SkillComponent,
+    SareeComponent,
+    SareeCardComponent,
+    TemplateSectComponent,
+    TemplateCardsComponent,
 
   ],
   imports: [
@@ -45,7 +54,8 @@ import { SkillComponent } from './components/skills/skill/skill.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    StorageServiceModule
+    StorageServiceModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
