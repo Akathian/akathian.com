@@ -1,0 +1,25 @@
+table.chessboard {
+    border: 2px solid #000000;
+    table-layout: fixed;
+}
+
+table.chessboard td {
+    width: 60px;
+    height: 60px;
+}
+
+table.chessboard td span {
+    cursor: pointer;
+}
+
+table.chessboard td.white {
+    background-color: #ffffff;
+}
+
+table.chessboard td.black {
+    background-color: #d3d3d3;
+}
+
+.invisible {
+    visibility: hidden;
+}

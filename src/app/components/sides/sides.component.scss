@@ -1,0 +1,14 @@
+a {
+    color: inherit;
+    font-weight: bold;
+}
+
+.project {
+    transition: all 0.5s;
+}
+
+.project-parent:hover .project,
+.project-parent:focus .project {
+    transform: scale(1.02);
+
+}

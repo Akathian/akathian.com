@@ -12,10 +12,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
+    "@angular/cdk": "^8.2.3",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",
     "@angular/forms": "^8.2.14",
+    "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
@@ -25,9 +27,11 @@
     "firebase": "^7.24.0",
     "form-data": "^3.0.0",
     "jquery": "^3.5.1",
+    "ngx-chess-board": "^2.1.8",
     "node-fetch": "^2.6.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
+    "worker-plugin": "^4.0.2",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {

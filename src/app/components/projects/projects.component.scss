@@ -1,4 +1,3 @@
-
 a {
     color: inherit;
     font-weight: bold;
@@ -10,12 +9,7 @@ a {
 
 .project-parent:hover .project,
 .project-parent:focus .project {
-  transform: scale(1.02);
+    transform: scale(1.02);
 
 }
 
-.js {
-    background: url(../../../assets/web.gif) no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-}

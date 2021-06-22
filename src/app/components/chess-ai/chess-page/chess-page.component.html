@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col mt-5 align-self-center">
+      <ngx-chess-board
+        #board
+        (moveChange)="moveCallback($event)"
+      ></ngx-chess-board>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mt-3 align-self-center">
+      <div class="row">Fen String: {{ fen }}</div>
+      <div class="row">History: {{ pgn }}</div>
+      <div class="row">Move Values: {{ moveVals }}</div>
+      <div class="row">Opening: {{ openingName }}</div>
+      <div class="row">Average Thinking Time: {{ avgThinkTime }}ms</div>
+    </div>
+  </div>
+  <div class="row" *ngIf="isLoading">
+    <div class="col mt-5 align-self-center text-center">
+      <span>Thinking <img src="assets/loading.gif" /></span>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col mt-5 align-self-center text-center">
+      <ngx-chess-board
+        #2pBoard
+        (moveChange)="moveCallback2p($event)"
+      ></ngx-chess-board>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col mt-5 align-self-center text-center invisible">
+      <ngx-chess-board #hiddenBoard></ngx-chess-board>
+    </div>
+  </div>
+</div>

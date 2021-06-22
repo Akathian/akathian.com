@@ -1,28 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: norwester;
-    src : url('./assets/fonts/norwester.otf')
+    src: url('./assets/fonts/norwester.otf')
 }
 
 @font-face {
     font-family: montserrat;
-    src : url('./assets/fonts/Montserrat-Regular.ttf')
+    src: url('./assets/fonts/Montserrat-Regular.ttf')
 }
 
 @font-face {
     font-family: kollektif;
-    src : url('./assets/fonts/Kollektif.ttf')
+    src: url('./assets/fonts/Kollektif.ttf')
 }
 
 
 @font-face {
     font-family: norwester;
-    src : url('./assets/fonts/norwester.otf')
+    src: url('./assets/fonts/norwester.otf')
 }
 
 @font-face {
     font-family: manifesto;
-    src : url('./assets/fonts/MANIFESTO.ttf')
+    src: url('./assets/fonts/MANIFESTO.ttf')
 }
 
 html {
@@ -30,7 +30,7 @@ html {
 }
 
 * {
-    //  outline: 1px solid red;
+    // outline: 1px solid red;
 }
 
 .emph {
@@ -46,20 +46,23 @@ html {
 
 #site {
     font-family: montserrat;
-    background-color: rgb(30, 37, 57); 
+    background-color: rgb(30, 37, 57);
     color: white;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .yellow {
     color: #ffd700;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
 }
+
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
 }
+
 ::-webkit-scrollbar-thumb {
     background: white;
     -webkit-box-shadow: none;
@@ -67,4 +70,14 @@ html {
 
 ::-webkit-scrollbar-thumb:window-inactive {
     background: none;
+}
+
+.js-bg {
+    background: url(./assets/web.gif) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.js-layer {
+    background-color: rgba(0, 0, 0, 0.8);
 }

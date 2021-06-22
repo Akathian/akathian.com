@@ -1,24 +1,25 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { InstagramComponent } from './components/instagram/instagram.component'
-import { MainComponent } from './components/main/main.component';
-import * as firebase from 'firebase';
-import 'firebase/analytics'
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { DecorComponent } from "./components/templates/decor/decor.component";
+import { MainComponent } from "./components/main/main.component";
+import * as firebase from "firebase";
+import "firebase/analytics";
 import "firebase/auth";
-import { environment } from 'src/environments/environment';
-import { SareeComponent } from './components/templates/saree/saree.component';
+import { environment } from "src/environments/environment";
+import { SareeComponent } from "./components/templates/saree/saree.component";
+import { ChessPageComponent } from "./components/chess-ai/chess-page/chess-page.component";
 
 firebase.initializeApp(environment.firebaseConfig);
 firebase.analytics();
 const routes: Routes = [
-  // { path: 'instagram-analytics', component: InstagramComponent },
-  { path: '', component: MainComponent },
-  { path: 'templates/saree-store', component: SareeComponent }
-
+  { path: "", component: MainComponent },
+  { path: "templates/saree-store", component: SareeComponent },
+  // { path: 'templates/decor-store', component: DecorComponent }
+  { path: "chess", component: ChessPageComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

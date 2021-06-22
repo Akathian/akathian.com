@@ -1,0 +1,15 @@
+<a [href]="link" class="underline-anim sub-emph pb-2">
+  <div class="row text-center">
+    <div
+      class="mx-auto rounded-circle d-flex align-items-center p-1 mb-1"
+      style="border: 2px solid gold"
+    >
+      <div
+        class="mx-auto rounded-circle d-flex align-items-center"
+        style="width: 4em; height: 4em; background: white"
+        [innerHTML]="svg | sanitizeHtml"
+      ></div>
+    </div>
+  </div>
+  <small>{{ name }}</small>
+</a>
