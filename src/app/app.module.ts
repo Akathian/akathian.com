@@ -32,6 +32,7 @@ import { NavCircleComponent } from './components/main/nav-circle/nav-circle.comp
 import { SanitizeStylePipe } from './pipes/sanitize-style.pipe';
 import { SidesComponent } from './components/sides/sides.component';
 import { SideComponent } from './components/sides/side/side.component';
+import { ZighraDemoComponent } from './components/zighra-demo/zighra-demo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +60,7 @@ import { SideComponent } from './components/sides/side/side.component';
     SanitizeStylePipe,
     SidesComponent,
     SideComponent,
+    ZighraDemoComponent,
   ],
   imports: [
     BrowserModule,
