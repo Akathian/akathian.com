@@ -9,6 +9,39 @@ export class ExperienceComponent implements OnInit {
   constructor() {}
   experiences = [
     {
+      name: "Deep Learning Research Programmer",
+      id: "ws",
+      company: "University of Toronto Dept. of Psychology",
+      location: "Toronto, ON",
+      blurb:
+        "Developing neural network models of how humans produce, comprehend, and understand language",
+      dates: {
+        from: "September 2021",
+        to: "Present",
+      },
+      desc: [
+        "Researched and coded the python (PYLens) translation of the CLens neural network simulator implementation of Simple Recurrent Backpropogation Through Time (SRBPTT)",
+      ],
+      tech: [],
+    },
+    {
+      name: "Machine Learning Engineer",
+      id: "16bit",
+      company: "16Bit",
+      location: "Remote",
+      blurb:
+        "Engineer, train, test and validate neural network model to infer bone density from x-ray images and survival predictions in COVID-19 patients.",
+      dates: {
+        from: "September 2021",
+        to: "Present",
+      },
+      desc: [
+        "Researched and implemented independantly DeepHit, COX, XGBoost, and DeepSurvivalMachine algorithms to COVID-19 patient data to predict clinical outcomes",
+        "Built a pipeline to run multiple experiments to obtain the model that could predict risk score the best",
+      ],
+      tech: [],
+    },
+    {
       name: "Software Developer",
       id: "biorender",
       company: "BioRender",
@@ -17,7 +50,7 @@ export class ExperienceComponent implements OnInit {
         "Worked on the platform team focusing on features, APIs and the database before moving to the Growth & Acceleration Engineering team to focus on user recommendations, running A/B tests and analyzing data.",
       dates: {
         from: "January 2021",
-        to: "Present",
+        to: "August 2021",
       },
       desc: [
         "Coded and A/B tested a scoring function to match over 6k users to field-specific templates to investigate whether recommending templates to a user would increase their usage",
