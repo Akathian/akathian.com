@@ -33,6 +33,7 @@ import { SanitizeStylePipe } from './pipes/sanitize-style.pipe';
 import { SidesComponent } from './components/sides/sides.component';
 import { SideComponent } from './components/sides/side/side.component';
 import { ZighraDemoComponent } from './components/zighra-demo/zighra-demo.component';
+import { TextClusteringComponent } from './components/text-clustering/text-clustering.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +62,7 @@ import { ZighraDemoComponent } from './components/zighra-demo/zighra-demo.compon
     SidesComponent,
     SideComponent,
     ZighraDemoComponent,
+    TextClusteringComponent,
   ],
   imports: [
     BrowserModule,

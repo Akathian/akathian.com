@@ -35,6 +35,9 @@ const transpositionTable = {};
 let count = 0;
 
 addEventListener("message", ({ data }) => {
+  if  (!data.data) {
+    return
+  }
   const { fen, pgn, depth, turn, boardInfo, pieceValues, castleRights } =
     JSON.parse(data);
 

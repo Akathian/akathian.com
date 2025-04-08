@@ -8,7 +8,7 @@ import "firebase/auth";
 import { environment } from "src/environments/environment";
 import { SareeComponent } from "./components/templates/saree/saree.component";
 import { ChessPageComponent } from "./components/chess-ai/chess-page/chess-page.component";
-import { ZighraDemoComponent } from "./components/zighra-demo/zighra-demo.component";
+import { TextClusteringComponent } from "./components/text-clustering/text-clustering.component";
 firebase.initializeApp(environment.firebaseConfig);
 firebase.analytics();
 const routes: Routes = [
@@ -16,7 +16,9 @@ const routes: Routes = [
   { path: "templates/saree-store", component: SareeComponent },
   // { path: 'templates/decor-store', component: DecorComponent }
   { path: "chess", component: ChessPageComponent },
-  { path: "zighra-demo", component: ZighraDemoComponent },
+  { path: "text-clustering", component: TextClusteringComponent },
+
+  // { path: "zighra-demo", component: ZighraDemoComponent },
 ];
 
 @NgModule({

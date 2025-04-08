@@ -9,6 +9,24 @@ export class ExperienceComponent implements OnInit {
   constructor() {}
   experiences = [
     {
+      name: "Machine Learning Engineer",
+      id: "marz",
+      company: "Monsters Aliens Zombies Robots (MARZ)",
+      location: "Toronto, ON",
+      blurb:
+        "Engineering ML apps, data pipelines, ML models and supporting ML infrastructure for VFX tasks",
+      dates: {
+        from: "March 2022",
+        to: "May 2023",
+      },
+      desc: [
+        "Spearheaded pivotal discussions in system design meetings for LipDub AI and Vanity AI, contributing to the development of cutting-edge AI infrastructure that facilitated Hollywood-grade automated lip-syncing and accelerated, high-quality VFX enhancements, respectively",
+        "Sped up a data pipeline by over 300x by optimizing db calls, model compilation (ONNX runtime) and general code quality",
+        "Built an end-to-end ML webapp for eye bag, acne and deaging edits that meet Hollywood standards with 5 team members, saving artists over 90% of their time"
+      ],
+      tech: [],
+    },
+    {
       name: "Deep Learning Research Programmer",
       id: "ws",
       company: "University of Toronto Dept. of Psychology",
@@ -17,7 +35,7 @@ export class ExperienceComponent implements OnInit {
         "Developing neural network models of how humans produce, comprehend, and understand language",
       dates: {
         from: "September 2021",
-        to: "Present",
+        to: "August 2022",
       },
       desc: [
         "Researched and coded the python (PYLens) translation of the CLens neural network simulator implementation of Simple Recurrent Backpropogation Through Time (SRBPTT)",
@@ -33,7 +51,7 @@ export class ExperienceComponent implements OnInit {
         "Engineer, train, test and validate neural network model to infer bone density from x-ray images and survival predictions in COVID-19 patients.",
       dates: {
         from: "September 2021",
-        to: "Present",
+        to: "December 2021",
       },
       desc: [
         "Researched and implemented independantly DeepHit, COX, XGBoost, and DeepSurvivalMachine algorithms to COVID-19 patient data to predict clinical outcomes",
@@ -78,24 +96,24 @@ export class ExperienceComponent implements OnInit {
       ],
       tech: ["Python", "French", "Math"],
     },
-    {
-      name: "Web Developer & Tutor",
-      id: "thayahan",
-      company: "Thayahan Arts School",
-      location: "Scarborough, ON",
-      blurb:
-        "Build and maintain the business’ website for 100s of monthly visitors and tutor students",
-      img: "https://thayahanartsschool.ca/assets/logo.png",
-      dates: {
-        from: "January 2019",
-        to: "Present",
-      },
-      desc: [
-        "Deployed a business website using Angular and Firebase with around 10 reusable components",
-        "Teach 5 students 1:1 the fundamentals of programming and french while keeping them engaged and interested in the lessons",
-      ],
-      tech: ["Python", "French", "Math"],
-    },
+    // {
+    //   name: "Web Developer & Tutor",
+    //   id: "thayahan",
+    //   company: "Thayahan Arts School",
+    //   location: "Scarborough, ON",
+    //   blurb:
+    //     "Build and maintain the business’ website for 100s of monthly visitors and tutor students",
+    //   img: "https://thayahanartsschool.ca/assets/logo.png",
+    //   dates: {
+    //     from: "January 2019",
+    //     to: "Present",
+    //   },
+    //   desc: [
+    //     "Deployed a business website using Angular and Firebase with around 10 reusable components",
+    //     "Teach 5 students 1:1 the fundamentals of programming and french while keeping them engaged and interested in the lessons",
+    //   ],
+    //   tech: ["Python", "French", "Math"],
+    // },
     {
       name: "Innovation Engineer (R&D App Dev)",
       id: "cibc",
@@ -111,7 +129,7 @@ export class ExperienceComponent implements OnInit {
       desc: [
         "Developed a queueing system using Node.js to determine event processing order, capable of handling over 1k events in a few milliseconds",
         // 'Wrote extensive mocha/chai unit tests for the server\'s Node.js backend',
-        "Built a 3-input neural network predicting user’s overall sentiment based on their gestures, facial expression and what they say so that the assistant can change how she answers the user’s questions",
+        "Built a neural network predicting user’s overall sentiment based on their gestures, facial expression and what they say so that the assistant can change how she answers the user’s questions",
         // "Performed research on finding technologies for solutioning the assistant’s learning model, UI controls, microphone, and camera set-ups via IoT and AI",
         "Wrote a program that provided the same functionality as the AWS Lex Console GUI using the SDK to allow for Git versioning of Lex bots, intents and slots.",
         // 'Worked with ultrasonic and infrared sensors to create a prototype for controlling the assistant\'s UI'
