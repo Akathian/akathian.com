@@ -16,7 +16,7 @@ export class ExperienceComponent implements OnInit {
       blurb:
         "Engineering ML apps, data pipelines, ML models and supporting ML infrastructure for VFX tasks",
       dates: {
-        from: "March 2022",
+        from: "Jan 2022",
         to: "May 2023",
       },
       desc: [
@@ -84,13 +84,12 @@ export class ExperienceComponent implements OnInit {
       location: "Scarborough, ON",
       blurb:
         "Build and maintain the business' website and teach subjects such as Programming, Math and French to students",
-      img: "https://thayahanartsschool.ca/assets/logo.png",
       dates: {
         from: "August 2020",
         to: "Present",
       },
       desc: [
-        "Built a fully fledged e-commerce web-app for OVVisuals (arts), allowing paypal payments, user login and other functionalities using multiple APIs.",
+        "Built a fully fledged e-commerce web-app allowing paypal payments, user login and other functionalities using multiple APIs.",
         "Creating a blog and forum website for a mental health awareness non-profit business, allowing for user anonymity",
         "Wrote reusable Angular components to keep the code for the websites clean and organized",
       ],
@@ -124,7 +123,7 @@ export class ExperienceComponent implements OnInit {
       img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/CIBC_logo.svg/350px-CIBC_logo.svg.png",
       dates: {
         from: "September 2019",
-        to: "April 2020",
+        to: "August 2020",
       },
       desc: [
         "Developed a queueing system using Node.js to determine event processing order, capable of handling over 1k events in a few milliseconds",
