@@ -35,7 +35,7 @@ export class ExperienceComponent implements OnInit {
         "Developing neural network models of how humans produce, comprehend, and understand language",
       dates: {
         from: "September 2021",
-        to: "August 2022",
+        to: "August 2023",
       },
       desc: [
         "Researched and coded the python (PYLens) translation of the CLens neural network simulator implementation of Simple Recurrent Backpropogation Through Time (SRBPTT)",
